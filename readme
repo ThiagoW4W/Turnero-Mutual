@@ -1,0 +1,63 @@
+# Turnero Turismo
+
+Sistema de turnos destinado al área de turismo de la Mutual del Personal Policial de Neuquén (MPPN).
+## 🎯 Características principales
+
+- Interfaz para **usuarios afiliados** que permite: solicitar turno, ver turno activo y evitar duplicados.  
+- Panel administrador con funciones: ver, editar, eliminar turnos, filtrar por nombre/apellido/DNI, exportar listado en Excel, definir plazos de turnos, cargar turnos especiales.  
+- Envío automático de emails al confirmar turnos.  
+- Aplicación web compatible con navegadores modernos.  
+## 🔩Tecnologías utilizadas
+
+PHP: Lógica del servidor y manejo de formularios.
+
+JavaScript: Validaciones y dinámicas en el front-end.
+
+HTML y CSS: Estructura y estilos básicos de la interfaz.
+
+PHPMyAdmin / MySQL: Gestión de la base de datos de turnos.
+
+PHPMailer: Para el envío automático de correos.
+
+PhpSpreadsheet: Para exportar los turnos a Excel.
+
+Es una aplicación web, completamente funcional desde cualquier navegador compatible.
+
+## 🧩 Composición
+
+El sistema está compuesto por dos secciones principales:
+
+1. Usuario
+
+- Solo los afiliados con localidad en Neuquén pueden acceder.
+- Permite completar un formulario con los datos personales y la   fecha deseada para asistir.
+- Una vez validado y completado, se envía automáticamente un correo con los datos del turno y la hora asignada según los plazos definidos por el administrador.
+- Los datos del turno también se mostrarán en una nueva ventana que impide que el usuario genere más turnos, a menos que se le habilite manualmente desde la sección de administrador.
+
+2. Administrador
+
+- De uso interno para el personal de turismo y sistemas.
+- Permite ver el listado de turnos, que pueden ser editados, eliminados o habilitados para solicitar un nuevo turno.
+- Incluye un buscador que filtra por apellido, nombre o DNI.
+- Permite:  Descargar el listado de turnos en formato Excel.
+- Definir los plazos de los turnos (cantidad de fechas y horas disponibles).
+- Cargar turnos especiales sin límite.
+
+## 📷 Capturas de pantalla
+
+### Pantalla de usuario
+![Formulario de turno](Images/vistaAdmin.png)
+
+
+
+
+## Mejoras futuras
+- Conexión con sistema de control de cuotas de la mutual
+- Restrincion de funciones según tipo de usuario. 
+
+###  ✅ Requisitos
+
+- PHP 7 o superior.
+ - PHPMailer
+- PhpSpreadsheet
+ 
