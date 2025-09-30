@@ -1,0 +1,279 @@
+body{
+    background-image: url("../Image/fondoAdmin.jpg");
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+
+#separador{
+  padding: 0;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0072BC;
+    border-top: 2px solid #0072BC;
+}
+
+.titulo{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 1vh;
+    font-size: 130%;
+    margin-top: 0;
+    
+}
+h3{
+    margin-left: 10px;
+}
+#botonVolver{
+    position: absolute;
+   float: left;
+    background-color: rgba(255, 255, 255, 0.404);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    transform: rotate(180deg);
+    width: 40px;
+    margin-left: 10px;
+    
+}
+input{
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+button{
+    display: inline-flex;
+    gap: 5px;
+    padding: 0.2rem;
+    justify-content: center;
+    align-items: center;
+}
+#encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bloque {
+    flex: 1;
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.centro {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+/* Botones de "Agregar Turno", "Descargar Excel" ... */
+#botones-nav {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.plazoTurno{
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(88, 57, 202);
+    background-color: rgb(151, 152, 231);
+
+    transition: 
+    background-color 0.5s ease,
+    color 0.5s ease,
+    width 0.5s ease
+    ;
+}
+
+.descargarExcel { 
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(34, 156, 44);
+    background-color: rgb(137, 189, 172);
+    transition: 
+    background-color 0.5s ease,
+    color 0.5s ease,
+    width 0.5s ease
+    ;
+}
+
+.agregarPersona {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(136, 174, 245);
+    border: 1px solid rgb(5, 60, 241);
+    transition: 
+    background-color 0.5s ease,
+    color 0.5s ease,
+    text-decoration 0.5s ease,
+    box-shadow 0.5s ease;
+}
+.agregarPersona:hover{
+    background-color: rgb(171, 195, 241);
+    color:black;
+    text-decoration: underline;
+    
+}
+.descargarExcel:hover{
+    background-color: rgba(39, 228, 228, 0.288);
+    color:black;
+    text-decoration: underline;
+    
+}
+.plazoTurno:hover{
+    background-color: rgba(67, 39, 228, 0.288);
+    color:black;
+    text-decoration: underline;
+    
+}
+
+#botones-nav img {
+    transition: transform 0.3s ease, filter  0.3s ease ;
+    
+}
+
+#botones-nav:hover img {
+    transform: scale(1.35); 
+    filter: drop-shadow(3px 2px 4px #0000007c);
+}
+
+/* Tabla de turnos*/
+.cajaTabla{
+    margin: 10px 10px  100px 10px  ;
+}
+
+table{
+    text-align: center;
+    width: 100%; 
+}
+th{        
+    background-color: #0072BC;
+    padding: 8px;
+    color: white;
+    padding: 1vh;
+}
+td {
+  border: 1px solid #dddddd;
+  padding: 0;
+}
+
+tr:nth-child(even) {
+   
+  background-color: #dddddd;
+}
+.datos{  
+    margin: 0;
+    text-align: center;
+}
+.botonAccion{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.botonAccion a {
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(209, 99, 99);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    transition: 
+    background-color 0.2s ease, color 0.2s ease, border  0.2s ease;
+    
+}
+#botonPermiso  a{
+    background-color: rgb(99, 209, 114);
+}
+#botonEditar  a{
+    background-color: rgb(1, 173, 253);
+}
+#botonPermiso  a:hover{
+    background-color: white;
+    color: rgb(99, 209, 114);
+    border: 2px solid rgb(99, 209, 114);
+}
+#botonEditar  a:hover{
+    background-color: white;
+    color: rgb(1, 173, 253);;;
+    border: 2px solid rgb(1, 173, 253);
+}
+.botonAccion a:hover{
+        background-color: white;
+    color: rgb(209, 99, 99);
+    border: 2px solid rgb(209, 99, 99);
+}
+#cajaBuscador{
+    display: flex;
+    justify-content: center;
+} 
+/* Barra de busqueda */
+.buscador{
+ 
+    width: 65%;
+    height: 5vh;
+    border: 2px solid #3282B8;
+    border-radius: 4vh;
+    text-align: center;
+    margin: 0 auto;
+    color: #0F4C75;
+    font-weight: bold;
+}
+/* Filtros y ordenar por... */
+#ordenar {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 3vh;
+    margin: 2vh  0 0 1vh ;
+}
+
+.campo-select {  
+    display: flex;
+    position:relative ;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+
+.campo-select label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#ordenar select {
+ 
+    font-size: 16px;
+    padding: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* SWEET ALERT EDITAR */
+.swal2-input{
+    width: 370px;
+}
+

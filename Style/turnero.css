@@ -1,0 +1,224 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-image: url(https://mppneuquen.com.ar/wp-content/uploads/2025/07/fondoTurnero.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#botonVolver {
+  background-color: rgba(255, 255, 255, 0.404);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 100%;
+  transform: rotate(180deg);
+  width: 40px;
+  margin: 10px;
+}
+
+/*TEXTO FONDO */
+
+#textoFondo {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+  z-index: -2;
+  font-size: 150px;
+}
+
+.texto-blur {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.404);
+  filter: blur(5px);
+  position: absolute;
+}
+
+.texto-borde {
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  position: absolute;
+}
+
+/* TURNERO */
+
+/* Contenedor principal */
+#cajaPrincipal {
+  display: flex;
+  width: 100%;
+  min-height: 90vh;
+  align-items: center;
+}
+
+/* Caja del turnero */
+
+#cajaTurnero {
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0 0 20vh;
+  padding: 2vh;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.404);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.774);
+}
+#tituloForm {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+#Turnero form {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: flex;
+  gap: 1vh;
+  width: 100%;
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.campo input,
+.campo {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#cajaTurnero form input {
+  padding: 0.5vh;
+  margin: 1vh;
+  font-size: large;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+#cajaTurnero form select {
+  width: 100%;
+  margin: 1vh;
+  font-size: large;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+#cajaBoton {
+  display: flex;
+  justify-content: center;
+}
+#cajaTurnero form button {
+  width: 30vh;
+  margin: 1vh;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border: transparent solid;
+  border-radius: 5px;
+  transition: color 0.5s ease, background-color 0.5s ease, font-size 0.5s ease;
+}
+#cajaTurnero form button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+
+/* SVG */
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  z-index: -1;
+  transform: rotate(-90deg) translateX(-100%);
+  transform-origin: top left;
+
+  overflow: hidden;
+}
+
+.blur-overlay svg {
+  position: absolute;
+  left: -50vh;
+  width: 500vh;
+  height: 170vh;
+  filter: blur(0); /* no desenfoques el SVG */
+  fill: rgba(35, 95, 223, 0.4);
+}
+#cajaMensaje {
+  position: fixed;
+  background: #f9f9fa88;
+  width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.404);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.774);
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  #cajaPrincipal {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5vh;
+  }
+
+  #cajaTurnero {
+    margin: 5vh 0;
+    width: 90%;
+    padding: 2vh;
+  }
+
+  #textoFondo {
+    margin-top: 60px;
+    font-size: 55px;
+    text-align: center;
+  }
+
+  #cajaTurnero form input,
+  #cajaTurnero form select,
+  #cajaTurnero form button {
+    width: 100%;
+    font-size: medium;
+  }
+
+  #botonVolver {
+    width: 35px;
+    margin: 5px;
+  }
+  #cajaMensaje {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #cajaMensaje p {
+    font-size: 16px; /* o menos si es necesario */
+    text-align: center;
+  }
+
+  #cajaMensaje img {
+    max-width: 100%;
+    height: auto;
+  }
+}

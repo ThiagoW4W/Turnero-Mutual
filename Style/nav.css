@@ -1,0 +1,40 @@
+/* Barra de navegacion */ 
+#barra{
+    display:flex;
+    justify-content:space-between;
+    padding: 1%;
+    align-items:center;
+    background: #0072BC;
+}
+#botones-nav {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+}
+.navizquierda{
+    align-items: center;
+    display: flex;
+}
+.navderecha{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+ul, li, a{
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+    color:white;
+    list-style:none;
+    display:inline-flex;
+}
+
+#leyenda{
+    color: white;
+    margin: 0%;
+    font-size: 120%;
+}
