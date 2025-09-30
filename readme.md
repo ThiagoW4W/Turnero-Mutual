@@ -47,9 +47,11 @@ El sistema está compuesto por dos secciones principales:
 
 ### Pantalla de usuario
 ![Formulario de turno](Images/vistaCliente.jpeg)
+![Formulario de turno celular](Images/vistaClienteCelu.jpeg)
 ### Pantalla de Administracion
-![Formulario de turno](Images/VistaAdmin.jpeg)
-![Formulario de turno](Images/editar.jpeg)
+
+![Listado de turno](Images/VistaAdmin.jpeg)
+![Edicion de turno](Images/editar.jpeg)
 
 
 
