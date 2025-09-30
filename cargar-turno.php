@@ -124,14 +124,14 @@ try {
         try {
             $mail->isSMTP();
             $mail->CharSet = 'UTF-8';
-            $mail->Host = 'smtp.gmail.com';
+            $mail->Host = '...';
             $mail->SMTPAuth = true;
-            $mail->Username = 'mutualpolicialneuquen@gmail.com';
-            $mail->Password = 'oadyjazdtoogavmy';
+            $mail->Username = '...;
+            $mail->Password = '...';
             $mail->SMTPSecure = 'tls';
             $mail->Port = 587;
 
-            $mail->setFrom('mutualpolicialneuquen@gmail.com', 'Mutual Policial');
+            $mail->setFrom('...', 'Mutual Policial');
             $mail->addAddress($destinatario);
 
             $mail->isHTML(true);
