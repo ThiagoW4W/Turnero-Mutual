@@ -46,7 +46,7 @@ El sistema está compuesto por dos secciones principales:
 ## 📷 Capturas de pantalla
 
 ### Pantalla de usuario
-![Formulario de turno](Images/vistaAdmin.jpeg)
+![Formulario de turno](Images/VistaAdmin.jpeg)
 
 
 
